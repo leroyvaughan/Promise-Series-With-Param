@@ -1,6 +1,7 @@
 import "./styles.css";
 import { PromiseSeriesWithParam } from "./code-mixer";
 import { getRandomInt } from "./global-vars";
+const PatientBuilder = require("./real-world-usage/get-patient-data");
 
 const myNum = 12;
 
@@ -14,9 +15,11 @@ function addFunc(numIn) {
       let numOut = myNum + numIn;
 
       /*
-      YOU CAN SET 'randNum' TO ZERO OR REMOVE THE RANDOMNESS
+
+        YOU CAN SET 'randNum' TO ZERO OR REMOVE THE RANDOMNESS
         FOR PRODUCTION USAGE
-        */
+      */
+
       let randNum = getRandomInt(1000, 3000);
       console.log("\nRandom setTimeout: " + randNum);
 
@@ -47,6 +50,18 @@ let patientBuilder = new PatientBuilder();
 patientBuilder.init("patient1");
 
 /*
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
