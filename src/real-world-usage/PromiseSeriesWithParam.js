@@ -1,5 +1,5 @@
 import { Promise } from "bluebird";
-import { isNull } from "./global-vars";
+import { isNull } from "../global-vars";
 
 export function PromiseSeriesWithParam(arrFunc, paramArr) {
   console.log("Promise.seriesWithParam...");
@@ -24,9 +24,8 @@ export function PromiseSeriesWithParam(arrFunc, paramArr) {
 
       return promise(paramArr[ix])
         .then(values => {
-          console.log("number added to 12 = " + paramArr[ix]);
-          //console.log("last value: " + values);
-          console.log("result: " + values);
+          //useless here.
+          //...but in a class file, could be stored in class object
           return values;
         })
         .catch(err => {

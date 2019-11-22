@@ -12,25 +12,53 @@ function addFunc(numIn) {
   return new Promise((resolve, reject) => {
     try {
       let numOut = myNum + numIn;
-      let randNum = getRandomInt(1000, 3000);
 
+      /*
+      YOU CAN SET 'randNum' TO ZERO OR REMOVE THE RANDOMNESS
+        FOR PRODUCTION USAGE
+        */
+      let randNum = getRandomInt(1000, 3000);
       console.log("\nRandom setTimeout: " + randNum);
 
       setTimeout(function() {
         resolve(numOut);
       }, randNum);
+
+      //FOR PRODUCTION USAGE
+      // resolve(numOut);
     } catch (e) {
       console.log("error in addFunc: " + e);
     }
   });
 }
 
-PromiseSeriesWithParam(addFunc, arrParam);
+/* #### BASIC TEST ###### */
+//uncomment line below for console output
+//PromiseSeriesWithParam(addFunc, arrParam);
 
+/*
+
+
+*/
+
+/* #### ADVANCED USAGE ###### */
+const PatientBuilder = require("./real-world-usage/get-patient-data");
+let patientBuilder = new PatientBuilder();
+patientBuilder.init("patient1");
+
+/*
+
+
+
+
+
+
+
+
+
+
+*/
 document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use Parcel to bundle this sandbox, you can find more info about Parcel
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
+<h1>Promise.SeriesWithParam<h1>
+
 `;
