@@ -1,7 +1,6 @@
 import "./styles.css";
 import { PromiseSeriesWithParam } from "./code-mixer";
 import { getRandomInt } from "./global-vars";
-const PatientBuilder = require("./real-world-usage/get-patient-data");
 
 const myNum = 12;
 
