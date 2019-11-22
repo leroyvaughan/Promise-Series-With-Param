@@ -75,8 +75,8 @@ result: 22
 ```
 
 
-Check this out on [codesandbox.io](https://codesandbox.io/s/promise-series-with-param-48bnp)
-
+Check out the live app on [codesandbox.io](https://codesandbox.io/s/promise-series-with-param-48bnp)
+<br><br><br><br><br><br>
 
 ## TO USE AS A GLOBAL FUNCTION IN A NODE.JS APPLICATION
 
