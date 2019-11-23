@@ -58,6 +58,7 @@ var getPatientData = function() {
 
         //simulate data fetched from EHR
         returnObj.data = {
+          patientID: pID,
           name: "test patient",
           age: "79",
           gender: "male"
@@ -80,7 +81,7 @@ var getPatientData = function() {
 
         //simulate data fetched from EHR
         returnObj.data = {
-          patientID: "patient1",
+          patientID: pID,
           allergies: [
             { description: "cheese", reaction: "hives" },
             { description: "milk", reaction: "frequent farts" }
@@ -105,7 +106,7 @@ var getPatientData = function() {
 
         //simulate data fetched from EHR
         returnObj.data = {
-          patientID: "patient1",
+          patientID: pID,
           conditions: [
             {
               description: "limp in walk",
@@ -143,7 +144,7 @@ var getPatientData = function() {
 
         //simulate data fetched from EHR
         returnObj.data = {
-          patientID: "patient1",
+          patientID: pID,
           medications: [
             {
               description: "naproxen sodium",
