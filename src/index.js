@@ -44,17 +44,21 @@ function addFunc(numIn) {
 */
 
 /* #### ADVANCED USAGE ###### */
-const PatientBuilder = require("./real-world-usage/get-patient-data");
-let patientBuilder = new PatientBuilder();
-patientBuilder.init("patient1");
+// const PatientBuilder = require("./real-world-usage/get-patient-data");
+// let patientBuilder = new PatientBuilder();
+// patientBuilder.init("patient1");
 
 /*
 
 
 
 
+*/
 
+import processPatients from "./real-world-usage/batch-processor";
+processPatients();
 
+/*
 
 
 
