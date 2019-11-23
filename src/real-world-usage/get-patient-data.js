@@ -13,6 +13,8 @@ var getPatientData = function() {
   //make Promise-based series call
 
   self.init = function(patientId) {
+    console.log("PatientBuilder.init()...");
+
     return new Promise((resolve, reject) => {
       try {
         pID = patientId;

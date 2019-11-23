@@ -8,13 +8,14 @@ export function PromiseSeriesWithParam(arrFunc, paramArr) {
     ix = -1;
 
   //make function call for each item in paramArr
-  for (var x = 0; x < paramArr.length; x++) {
-    if (isNull(paramArr[x])) {
-      console.log("null? " + x);
+  paramArr.forEach(element => {
+    if (!isNull(element)) {
+      funcArr.push(arrFunc);
+    } else {
+      //should not have nulls, but JIC
       throw new Error("null object in paramArr");
     }
-    funcArr.push(arrFunc);
-  }
+  });
 
   /// values = function output, promise = funcArr-item
   Promise.reduce(
