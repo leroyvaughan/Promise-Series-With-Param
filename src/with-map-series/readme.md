@@ -4,7 +4,6 @@ You can find example usage in the [index.js](https://github.com/leroyvaughan/Pro
 
 
 ## Otherwise,
-<br><br><br>
 
 Sample Index.js for a Node.js Application
 
