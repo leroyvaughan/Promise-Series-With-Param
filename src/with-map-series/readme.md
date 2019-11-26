@@ -1,6 +1,6 @@
 # EXAMPLE USAGE
 
-You can find example usage in the index.js file located in the root folder.
+You can find example usage in the [index.js](https://github.com/leroyvaughan/Promise-Series-With-Param/blob/master/src/index.js) file located in the root/src folder.
 
 
 ## Otherwise,
