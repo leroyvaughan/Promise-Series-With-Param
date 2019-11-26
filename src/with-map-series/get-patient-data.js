@@ -16,12 +16,15 @@ var getPatientData = function() {
     console.log("PatientBuilder.init()...");
 
     return new Promise((resolve, reject) => {
-      try {
-        pID = patientId;
-        resolve(PromiseSeriesWithParam(saveData, arrayOfFuncsToProcess));
-      } catch (e) {
-        reject("err in getPatientData():\t" + e);
-      }
+      pID = patientId;
+      PromiseSeriesWithParam(saveData, arrayOfFuncsToProcess)
+        .then(resp => {
+          // console.log(resp);
+          resolve();
+        })
+        .catch(err => {
+          reject("err in getPatientData():\t" + err);
+        });
     });
   };
 
@@ -38,8 +41,7 @@ var getPatientData = function() {
           );
           // console.log(jsonData);
 
-          console.log(JSON.stringify(jsonData, null, 4));
-          resolve();
+          resolve(JSON.stringify(jsonData, null, 4));
         })
         .catch(err => {
           //could be better...
