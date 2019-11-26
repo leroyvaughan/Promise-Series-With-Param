@@ -126,3 +126,8 @@ global.PromiseSeriesWithParam(arrFunc, paramArr) {
 
 ## Of note: At the time I wrote this, Promise.mapSeries was not available in Bluebird afaik.
 <br><br><br>
+<br><br><br>
+
+## Looking for more details regarding this?  Check out my [blog post](http://garuwun.x10host.com/2019/11/23/promise-serieswithparam/).
+<br><br><br>
+<br><br><br>
