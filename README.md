@@ -128,6 +128,6 @@ global.PromiseSeriesWithParam(arrFunc, paramArr) {
 <br><br><br>
 <br><br><br>
 
-## Looking for more details regarding this?  Check out my [blog post](http://garuwun.x10host.com/2019/11/23/promise-serieswithparam/).
+## Looking for more details regarding this?  Check out my [blog post](https://nevertherabbit.com/promise-serieswithparam-w-promise-mapseries/).
 <br><br><br>
 <br><br><br>
